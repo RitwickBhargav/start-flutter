@@ -13,19 +13,9 @@ class MyApp extends StatelessWidget { //Uses Stateless widget makes the app itse
     return MaterialApp(
       title: 'Hello App',
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.blue,
       ),
        home:RandomWords(),
-     // Scaffold( 
-      ////   // Scaffold widget provides default app/title bar and body property
-      //      appBar: AppBar(
-      //       title: Text('Welcome to Flutter'),
-      //      ),
-      //     body: Center(
-      //       // child: Text('Keep Fluttering'),
-      //       child: RandomWords(),
-      //     ),
-      // ),
       );
     }
 }
@@ -41,7 +31,7 @@ class RandomWordsState extends State<RandomWords>{
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text('Startup Name Generator'),
+        title: Text('Generate your Startup name'),
       ),
       body: _buildSuggestions(),
     );
